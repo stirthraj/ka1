@@ -48,3 +48,13 @@ a{text-align: center;text-decoration: none;color:white;}
 .fifth-grid-main{margin:0px auto;width:300px;}
 .fifth-grid-box{margin:0px 50px;display: flex;flex-flow: row;flex-wrap: wrap;justify-content: center;justify-items: center;}
 .fifth-grid-box>div{width:300px;padding:20px;text-align: center;}
+                                                /* 6th Section */
+.six-grid{display:flex;flex-flow:column; justify-content:center;align-items: center;}
+.six-grid button{padding:10px 30px;border-radius: 20px;background-color: rgb(31, 103, 197);color:white;}
+.six-grid p{width:520px;}
+.six-profile{display: flex;flex-flow: row;width:200px;}
+.six-profile>div{padding: 5px;}
+@media only screen and (max-width:600px){
+.six-grid p{width:320px}
+}
+                                                /* 7th Section */
