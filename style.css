@@ -89,7 +89,15 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#first-flex-img{
+    height:200px;
+    width:300px;
+}
 @media only screen and (min-width: 600px) {
+    #first-flex-img{
+    height:300px;
+    width:500px;
+}
   .f11 {
     display: none;
   }
