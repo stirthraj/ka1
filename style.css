@@ -133,18 +133,26 @@ a {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  margin: 10px 100px;
+  margin: 10px auto;
 }
 .sec-flex-item2 > div {
   padding: 10px;
+  width:300px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .sec-flex-item2 {
     display: flex;
     flex-flow: column;
     justify-content: center;
   }
 }
+/* @media only screen and (max-width: 600px) {
+  .sec-flex-item2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+} */
 /* 3rd Section */
 .third-grid-box {
   display: grid;
@@ -196,7 +204,7 @@ button {
   margin: 0px auto;
 }
 .fifth-grid-box {
-  margin: 0px 50px;
+  margin: 0px 10px;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -204,8 +212,8 @@ button {
   justify-items: center;
 }
 .fifth-grid-box > div {
-  width: 300px;
-  padding: 20px;
+  width: 330px;
+  padding: 10px;
   text-align: center;
 }
 /* 6th Section */
@@ -214,6 +222,10 @@ button {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+}
+.six-text p{
+  text-align: center;
+  font-weight: bold;
 }
 .six-grid button {
   padding: 10px 30px;
@@ -345,10 +357,14 @@ textarea {
 }
 /* 10th Section */
 .tenth-grid {
-  display: grid;
-  grid-template-columns: 250px auto 250px;
-  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
+.tenth-grid>div{
+  flex:300px;
+  padding: 10px 20px;
+}
+
 .tenth-grid p,
 h1,
 h2,
@@ -357,18 +373,4 @@ h4,
 h5,
 h6 {
   text-align: center;
-}
-@media only screen and (max-width: 900px) {
-  .tenth-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 50px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .tenth-grid {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 10px;
-  }
 }
