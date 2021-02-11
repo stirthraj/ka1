@@ -21,7 +21,7 @@ a {
 }
 /*1st section */
 .flex1 {
-  background-image: linear-gradient(to right, #cc1967, #7c69e0);
+  background-image: linear-gradient(to right, #e20c69, #4c32ce);
   color: white;
 }
 .f11 {
@@ -171,7 +171,7 @@ a {
 }
 /* 4th Section */
 .fourth-flex-main {
-  background-image: linear-gradient(to right, #cc1967, #7c69e0);
+  background-image: linear-gradient(to right, #e20c69, #4c32ce);
   color: white;
   display: flex;
   justify-content: center;
