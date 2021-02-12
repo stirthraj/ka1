@@ -310,9 +310,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   flex-flow: column;
-  background-color: rgb(56, 54, 54);
+  background-color: #201d27;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 .nine-flex > div {
   margin: 10px 0px;
