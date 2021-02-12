@@ -2,6 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
 }
 /*global css*/
 h1,
@@ -40,7 +41,8 @@ a {
   padding: 5px 5px;
 }
 .f12 > a {
-  padding: 5px 5px;
+  padding: 5px 10px;
+  margin:0px 10px;
 }
 .f12 > input {
   border-radius: 10px;
@@ -48,6 +50,7 @@ a {
 }
 .flex1a {
   width: 100%;
+  padding:30px 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -137,7 +140,7 @@ a {
 }
 .sec-flex-item2 > div {
   padding: 10px;
-  width:300px;
+  width: 300px;
 }
 @media only screen and (max-width: 900px) {
   .sec-flex-item2 {
@@ -168,6 +171,12 @@ a {
   text-align: center;
   font-size: 1rem;
   font-weight: normal;
+}
+.third-text-box button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(31, 103, 197);
+  color: white;
 }
 .third-text-box > h1 {
   letter-spacing: 2px;
@@ -223,7 +232,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-.six-text p{
+.six-text p {
   text-align: center;
   font-weight: bold;
 }
@@ -311,6 +320,7 @@ button {
   flex-wrap: wrap;
   flex-flow: column;
   background-color: #201d27;
+  color: white;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
@@ -323,7 +333,7 @@ button {
   flex-wrap: wrap;
   flex-flow: row-reverse;
 }
-.nine-box>div{
+.nine-box > div {
   flex: 50%;
 }
 @media only screen and (max-width: 600px) {
@@ -361,8 +371,8 @@ textarea {
   display: flex;
   flex-wrap: wrap;
 }
-.tenth-grid>div{
-  flex:300px;
+.tenth-grid > div {
+  flex: 300px;
   padding: 10px 20px;
 }
 
