@@ -322,6 +322,7 @@ button {
 }
 .nine-flex > div {
   margin: 10px 0px;
+  text-align: center;
 }
 .nine-box {
   display: flex;
