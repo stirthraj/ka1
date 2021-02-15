@@ -2,27 +2,17 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
 }
-/*global css*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  text-align: center;
-  padding: 0px 10px;
+:root {
+  --btnbg: #38a3f1;
 }
 a {
-  text-align: center;
   text-decoration: none;
-  color: white;
 }
 /*1st section */
 .flex1 {
-  background-image: linear-gradient(to right, #e20c69, #4c32ce);
+  background-image: linear-gradient(to top right, #e32881, #7834bf);
   color: white;
 }
 .f11 {
@@ -41,16 +31,17 @@ a {
   padding: 5px 5px;
 }
 .f12 > a {
-  padding: 5px 10px;
-  margin:0px 10px;
+  padding: 10px 10px;
+  margin: 0px 10px;
+  color: white;
 }
 .f12 > input {
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 .flex1a {
   width: 100%;
-  padding:30px 40px;
+  padding: 30px 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -92,15 +83,20 @@ a {
 .flex1c-item {
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
+.f111 {
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
 @media only screen and (max-width: 600px) {
   .flex1c {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
+  }
+  .f111 {
+    display: none;
   }
 }
 .flex1c > div {
@@ -149,13 +145,6 @@ a {
     justify-content: center;
   }
 }
-/* @media only screen and (max-width: 600px) {
-  .sec-flex-item2 {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
-} */
 /* 3rd Section */
 .third-grid-box {
   display: grid;
@@ -175,7 +164,7 @@ a {
 .third-text-box button {
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: rgb(31, 103, 197);
+  background-color: var(--btnbg);
   color: white;
 }
 .third-text-box > h1 {
@@ -188,11 +177,14 @@ a {
 }
 /* 4th Section */
 .fourth-flex-main {
-  background-image: linear-gradient(to right, #e20c69, #4c32ce);
+  background-image: linear-gradient(to top right, #e32881, #7834bf);
   color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.fourth-flex-main > div {
+  text-align: center;
 }
 .fourth-form {
   margin: auto;
@@ -211,6 +203,7 @@ button {
 }
 .fifth-grid-main {
   margin: 0px auto;
+  text-align: center;
 }
 .fifth-grid-box {
   margin: 0px 10px;
@@ -239,7 +232,7 @@ button {
 .six-grid button {
   padding: 10px 30px;
   border-radius: 20px;
-  background-color: rgb(31, 103, 197);
+  background-color: var(--btnbg);
   color: white;
 }
 .six-grid button {
@@ -270,6 +263,7 @@ button {
   flex-wrap: wrap;
   margin: 0px 80px;
   justify-content: center;
+  padding: 25px 5px;
 }
 .eight-flex > div {
   width: 300px;
@@ -280,7 +274,7 @@ button {
 .eight-flex button {
   padding: 10px 40px;
   margin: 5px;
-  background-color: darkcyan;
+  background-color: var(--btnbg);
   color: white;
   border-radius: 20px;
 }
@@ -294,7 +288,7 @@ button {
   text-align: center;
 }
 #eight1 {
-  background-image: linear-gradient(to right, blue, red);
+  background-image: linear-gradient(to top right, #e32881, #7834bf);
 }
 .eight-items {
   display: flex;
@@ -316,10 +310,11 @@ button {
 }
 /* 9th Section */
 .nine-flex {
+  padding: 30px 0px;
   display: flex;
   flex-wrap: wrap;
   flex-flow: column;
-  background-color: #201d27;
+  background-color: #252b43;
   color: white;
   align-items: center;
   justify-content: center;
@@ -364,7 +359,9 @@ textarea {
   width: 100%;
   margin: 15px 0px;
   border-radius: 10px;
-  padding: px 10px;
+  border: none;
+  padding: 10px 10px;
+  background-color: #ece7d1;
 }
 /* 10th Section */
 .tenth-grid {
@@ -373,15 +370,7 @@ textarea {
 }
 .tenth-grid > div {
   flex: 300px;
-  padding: 10px 20px;
-}
-
-.tenth-grid p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  padding: 30px 20px;
   text-align: center;
 }
+
